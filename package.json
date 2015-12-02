@@ -1,0 +1,23 @@
+{
+  "name": "homebridge-lono",
+  "description": "Lono sprinkler system plugin for HomeBridge",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kraigm/homebridge-lono.git"
+  },
+  "license": "ISC",
+  "preferGlobal": true,
+  "keywords": [
+    "homebridge-plugin",
+    "lono"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.5"
+  },
+  "dependencies": {
+    "lono": "^0.2.0",
+    "promise": "^7.0.4"
+  }
+}
