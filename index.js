@@ -49,6 +49,10 @@ LonoPlatform.prototype = {
 					that.zones = [];
 					that.zoneData.map(function (z, i) {
 						var acc = new Accessory(z.name, uuid.generate(that.config.device_id + i));
+						acc.getServices = function(){
+							return acc.services;
+						};
+						acc.name = z.name;
 
 						acc.getService(Service.AccessoryInformation)
 							.setCharacteristic(Characteristic.Manufacturer, "Lono")
