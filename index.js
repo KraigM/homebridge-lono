@@ -63,10 +63,10 @@ LonoPlatform.prototype = {
 							.getCharacteristic(Characteristic.On)
 							.on('get', function (callback) {
 								// Refreshed automatically by platform
-								callback(null, that.currentZone == i);
+								callback(null, that.currentZone == z.number);
 							})
 							.on('set', function (state, callback) {
-								device.setZone(i, state)
+								that.device.setZone(z.number, state)
 									.then(function () {
 										callback(null, state);
 									})
