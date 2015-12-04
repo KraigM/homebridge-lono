@@ -1,7 +1,7 @@
 {
   "name": "homebridge-lono",
   "description": "Lono sprinkler system plugin for HomeBridge",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/kraigm/homebridge-lono.git"
