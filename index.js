@@ -38,11 +38,11 @@ LonoPlatform.prototype = {
 			that.device.getInfo()
 				.then(function (info) {
 					that.info = info;
-					return device.getZone();
+					return that.device.getZone();
 				})
 				.then(function (z) {
 					that.currentZone = z;
-					return device.getZonesInfo();
+					return that.device.getZonesInfo();
 				})
 				.then(function (zones) {
 					that.zoneData = zones;
@@ -80,7 +80,7 @@ LonoPlatform.prototype = {
 								.getValue();
 						};
 
-						that.zone.push(acc);
+						that.zones.push(acc);
 					});
 					setInterval(function () {
 						that.device.getZone()
